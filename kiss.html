@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Kiss</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxsb3ZlJTIwYW5kJTIwcGlua3xlbnwwfHx8fDE2ODI3MjY0Mjg&ixlib=rb-4.0.3&q=80&w=1080'); /* Romantic background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+        }
+
+        .container {
+            background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4d4d; /* Romantic red */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #ff1a1a; /* Darker red on hover */
+        }
+
+        #responseMessage {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💋 CAN I KISS YOU SECOND TIME ? 💋</h1>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        <p id="responseMessage"></p>
+        <size>200<img src="https://www.gifcen.com/wp-content/uploads/2024/04/kissing-gif-7.gif" </size>
+   
+    </div>
+
+        
+    <script>
+        // Pop-up message when the page loads
+        window.onload = function() {
+            const ready = confirm("Are you ready for a sweet surprise kiss?");
+            if (ready) {
+                alert("Great! Let's make it special! 💖");
+            } else {
+                alert("YOU NEED THIS ONE MOMENT ! 😊");
+            }
+        };
+
+        document.getElementById('yesButton').addEventListener('click', function() {
+            document.getElementById('responseMessage').innerText = "😍 Yay! Here comes a sweet kiss! 😘";
+        });
+
+        document.getElementById('noButton').addEventListener('click', function() {
+            document.getElementById('responseMessage').innerText = "😢 That's okay! I'll wait for the next time! ❤️";
+        });
+    </script>
+</body>
+</html>
